@@ -1,0 +1,17 @@
+<!-- '_' consider as partial view not actual view -->
+<div class="form-group">
+    <label for="title">Title</label>
+    <input required value="<%= article.title %>" type="text" name="title" id="title" class="form-control">
+</div>
+<div class="form-group">
+    <label for="description">Description</label>
+    <textarea required type="text" name="description" id="description" class="form-control"><%= article.description %></textarea>
+</div>
+<div class="form-group">
+    <label for="markdown">Markdown</label>
+    <textarea required type="text" name="markdown" id="markdown" class="form-control"><%= article.markdown %></textarea>
+</div>
+
+<!-- its allows, back to index page -->
+<a href="/" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Save</button>
